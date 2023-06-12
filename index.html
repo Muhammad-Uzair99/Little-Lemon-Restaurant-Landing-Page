@@ -55,19 +55,19 @@
             "use strict";
             const navBtn = document.querySelector("#nav-btn");
             const hiddenNav = document.querySelector("#hidden-nav");
+            let navBtnClass = navBtn.classList;
+
             let navActive = true;
-            let navBtnClass = navBtn.className.split(" ");
+            
             navBtn.addEventListener("click", () => {
                 if (navActive) {
-                    navBtnClass[navBtnClass.indexOf("hamburger")] = "cross";
+                    navBtnClass.replace("hamburger", "cross");
                     hiddenNav.removeAttribute("class");
-                    navActive = false;
                 } else {
-                    navBtnClass[navBtnClass.indexOf("cross")] = "hamburger";
+                    navBtnClass.replace("cross", "hamburger");
                     hiddenNav.setAttribute("class", "hidden-nav");
-                    navActive = true;
                 }
-                navBtn.className = navBtnClass.join(" ");
+                navActive = !navActive;
             });
         })();
     </script>
