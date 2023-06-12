@@ -61,11 +61,7 @@
 /*
     Navigation bar
 */
-
 .navigation {
-    position:absolute;
-    top: 2rem;
-    right: 1.5rem;
     z-index: 1;
 }
 
@@ -86,22 +82,49 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .navigation {
+        position:absolute;
+        top: 2rem;
+        right: 1.5rem;
+    }
+
     /* Hamburger Button */
-    .hamburger {
+    .nav-btn {
         width: 2rem;
         height: 2rem;
         background-color:#0000009c;
         margin: auto;
         border-radius: 0.25rem;
         overflow: hidden;
+        position: relative;
     }
 
     .hamburger div {
-        width: 85%;
-        height: 0.3em;
+        width: 90%;
+        height: 10%;
         background-color: #c4c1c1;
         margin: 0.25em auto;
         border-radius: 0.5rem;
+    }
+
+    .cross div:nth-child(1) {
+        height: 0.2rem;
+        width: 85%;
+        background-color: #c4c1c1;
+        position: absolute;
+        top: 45%;
+        right: 5%;
+        transform: rotate(45deg);
+    }
+
+    .cross div:nth-child(3) {
+        height: 0.2rem;
+        width: 85%;
+        background-color: #c4c1c1;
+        position: absolute;
+        top: 45%;
+        right: 5%;
+        transform: rotate(135deg);
     }
 
     .navigation ol {
