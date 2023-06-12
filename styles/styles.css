@@ -36,6 +36,11 @@
     z-index: 1;
 }
 
+.heading p {
+    font-family:'Times New Roman', Times, serif;
+    width: 80%;
+}
+
 /*
     Header Background
 */
@@ -136,6 +141,9 @@
     .hidden-nav{
         display: none;
     }
+    .heading p {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -152,13 +160,8 @@
         align-items: center;
         gap: 1rem;
     }
-
     
-}
-
-.heading p {
-    font-family:'Times New Roman', Times, serif;
-    width: 80%;
+    
 }
 
 .heading h1 {
