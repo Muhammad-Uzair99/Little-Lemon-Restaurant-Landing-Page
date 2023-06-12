@@ -85,7 +85,7 @@
     .navigation {
         position:absolute;
         top: 2rem;
-        right: 1.5rem;
+        right: 1.1rem;
     }
 
     /* Hamburger Button */
@@ -103,12 +103,12 @@
         width: 90%;
         height: 10%;
         background-color: #c4c1c1;
-        margin: 0.25em auto;
+        margin: 23% auto;
         border-radius: 0.5rem;
     }
 
     .cross div:nth-child(1) {
-        height: 0.2rem;
+        height: 10%;
         width: 85%;
         background-color: #c4c1c1;
         position: absolute;
@@ -118,7 +118,7 @@
     }
 
     .cross div:nth-child(3) {
-        height: 0.2rem;
+        height: 10%;
         width: 85%;
         background-color: #c4c1c1;
         position: absolute;
@@ -131,6 +131,10 @@
         margin: 0.5rem 0;
         background-color: #0000009c;
         border-radius: 0.65rem;
+    }
+
+    .hidden-nav{
+        display: none;
     }
 }
 

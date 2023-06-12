@@ -19,12 +19,12 @@
         </article>
 
         <nav class="navigation">
-            <div class="nav-btn">
+            <div class="nav-btn hamburger" id="nav-btn">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-            <ol>
+            <ol class="hidden-nav" id="hidden-nav">
                 <a href="#"><li>Home</li></a>
                 <a href="#"><li>Menu</li></a>
                 <a href="#"><li>Book</li></a>
@@ -51,7 +51,25 @@
     </footer>
 
     <script>
-
+        (function(){
+            "use strict";
+            const navBtn = document.querySelector("#nav-btn");
+            const hiddenNav = document.querySelector("#hidden-nav");
+            let navActive = true;
+            let navBtnClass = navBtn.className.split(" ");
+            navBtn.addEventListener("click", () => {
+                if (navActive) {
+                    navBtnClass[navBtnClass.indexOf("hamburger")] = "cross";
+                    hiddenNav.removeAttribute("class");
+                    navActive = false;
+                } else {
+                    navBtnClass[navBtnClass.indexOf("cross")] = "hamburger";
+                    hiddenNav.setAttribute("class", "hidden-nav");
+                    navActive = true;
+                }
+                navBtn.className = navBtnClass.join(" ");
+            });
+        })();
     </script>
 </body>
 </html>
