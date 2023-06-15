@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Little Lemmon Restaurant</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="dist/output.css">
 </head>
 <body class="container">
 
@@ -50,26 +50,5 @@
 
     </footer>
 
-    <script>
-        (function(){
-            "use strict";
-            const navBtn = document.querySelector("#nav-btn");
-            const hiddenNav = document.querySelector("#hidden-nav");
-            let navBtnClass = navBtn.classList;
-
-            let navActive = true;
-            
-            navBtn.addEventListener("click", () => {
-                if (navActive) {
-                    navBtnClass.replace("hamburger", "cross");
-                    hiddenNav.removeAttribute("class");
-                } else {
-                    navBtnClass.replace("cross", "hamburger");
-                    hiddenNav.setAttribute("class", "hidden-nav");
-                }
-                navActive = !navActive;
-            });
-        })();
-    </script>
 </body>
 </html>
