@@ -6,7 +6,7 @@
     <title>Little Lemmon Restaurant</title>
     <link rel="stylesheet" href="dist/output.css">
 </head>
-<body class="container box-border w-screen text-center m-0 p-0 grid grid-cols-1 grid-rows-4 font-serif font-semibold text-yellow-100">
+<body class="container box-border w-full text-center m-0 p-0 grid grid-cols-1 grid-rows-4 font-serif font-semibold text-yellow-100">
 
     <header id="header" class="col-span-1 row-span-1 grid grid-rows-6 grid-cols-12 h-screen">
 
@@ -21,41 +21,41 @@
             
             </div>
             
-            <p class="row-start-5 row-end-7 col-span-12 text-sm max-w-md m-auto z-20">"Delight your taste buds with culinary wonders, at our restaurant where flavors take you on a journey."</p>
+            <p class="pl-8 row-start-5 row-end-7 col-span-12 text-sm max-md:text-xs max-w-md m-auto z-20">"Delight your taste buds with culinary wonders, at our restaurant where flavors take you on a journey."</p>
         
         </article>
 
-        <nav id="navigation" class="row-span-1 col-start-7 col-end-13 text-lg z-10">
-            <!--
-            <div class="nav-btn hamburger" id="nav-btn">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            -->
-            <ol class="md:flex justify-around my-6 hidden" id="hidden-nav">
-                <a href="#" class="grow-0 shrink-0 basis-24 py-4 rounded-xl hover:bg-gray-700"><li>Home</li></a>
-                <a href="#" class="grow-0 shrink-0 basis-24 py-4 rounded-xl hover:bg-gray-700"><li>Menu</li></a>
-                <a href="#" class="grow-0 shrink-0 basis-24 py-4 rounded-xl hover:bg-gray-700"><li>Book</li></a>
-                <a href="#" class="grow-0 shrink-0 basis-24 py-4 rounded-xl hover:bg-gray-700"><li>About</li></a>
+        <nav id="navigation" class="md:row-span-1 row-span-2 md:col-start-7 col-start-11 col-end-13 md:col-end-13 text-lg z-10">
+            
+            <button id="nav-btn" class="md:hidden h-8 w-8 mx-auto mt-10 flex justify-between flex-col overflow-hidden rounded-md">
+                <div class="w-full h-1.5 bg-white"></div>
+                <div class="w-full h-1.5 bg-white"></div>
+                <div class="w-full h-1.5 bg-white"></div>
+            </button>
+            
+            <ol id="nav" class="md:flex md:my-6 md:justify-around max-md:mt-3 max-md:h-3/5 max-md:text-base max-md:hidden">
+                <a href="#" class="md:grow-0 md:shrink-0 md:basis-24 md:py-4 max-md:block max-md:mt-2 max-md:h-10 max-md:py-2 rounded-xl hover:bg-yellow-400 hover:text-red-950"><li>Home</li></a>
+                <a href="#" class="md:grow-0 md:shrink-0 md:basis-24 md:py-4 max-md:block max-md:mt-2 max-md:h-10 max-md:py-2 rounded-xl hover:bg-yellow-400 hover:text-red-950"><li>Menu</li></a>
+                <a href="#" class="md:grow-0 md:shrink-0 md:basis-24 md:py-4 max-md:block max-md:mt-2 max-md:h-10 max-md:py-2 rounded-xl hover:bg-yellow-400 hover:text-red-950"><li>Book</li></a>
+                <a href="#" class="md:grow-0 md:shrink-0 md:basis-24 md:py-4 max-md:block max-md:mt-2 max-md:h-10 max-md:py-2 rounded-xl hover:bg-yellow-400 hover:text-red-950"><li>About</li></a>
             </ol>
         </nav>
-
-        <div class="z-0 absolute w-screen h-screen bg-black bg-opacity-60"></div>
-
-        <div class="-z-10 absolute w-screen h-screen overflow-hidden">
+        
+        <div class="z-0 absolute top-0 right-0 w-screen h-screen bg-black bg-opacity-80"></div>
+        
+        <div class="-z-10 absolute top-0 right-0 w-screen h-screen overflow-hidden">
             <video class="min-w-full min-h-full object-fill" muted autoplay loop>
                 <source src="videos/background-1280x720-25fps.mp4" type="video/mp4">
             </video>
         </div>
-
+        
     </header>
 
-    <main class="main">
+    <main id="main" class="">
 
     </main>
 
-    <footer class="footer">
+    <footer id="footer" class="">
 
     </footer>
 
