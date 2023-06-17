@@ -1,63 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Little Lemmon Restaurant</title>
-    <link rel="stylesheet" href="dist/output.css">
-</head>
-<body class="container box-border w-full text-center m-0 p-0 grid grid-cols-1 grid-rows-4 font-serif font-semibold text-yellow-100">
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
 
-    <header id="header" class="col-span-1 row-span-1 grid grid-rows-6 grid-cols-12 h-screen">
+  <body
+    class="container m-0 box-border grid w-full grid-cols-1 grid-rows-4 p-0 text-center font-serif font-semibold text-yellow-100">
+    <header
+      id="header"
+      class="col-span-1 row-span-1 grid h-screen grid-cols-12 grid-rows-6">
+      <img
+        id="logo"
+        class="z-10 row-span-1 p-4 max-md:col-span-4 max-md:row-span-2 max-md:mt-5 md:col-start-2 md:col-end-4 md:m-auto"
+        src="logos/Asset 16@4x.png"
+        alt="Little Lemon logo" />
 
-        <img id="logo" class="row-span-1 col-span-3 md:col-start-2 md:col-end-4 m-auto p-4 z-10 " src="logos/Asset 16@4x.png" alt="Little Lemon logo">
-
-        <article id="heading" class="row-start-3 row-end-5 col-start-3 col-end-11 grid grid-rows-6 grid-cols-12 z-10">
-            
-            <div id="heading" class="row-start-1 row-end-5 col-span-12 z-20">
-
-                <h1 class="absolute -top-full">Little Lemon</h1>
-                <img class="max-h-full max-w-full mx-auto my-5" src="logos/Asset 14@4x.png" alt="Little Lemon Heading">
-            
-            </div>
-            
-            <p class="pl-8 row-start-5 row-end-7 col-span-12 text-sm max-md:text-xs max-w-md m-auto z-20">"Delight your taste buds with culinary wonders, at our restaurant where flavors take you on a journey."</p>
-        
-        </article>
-
-        <nav id="navigation" class="md:row-span-1 row-span-2 md:col-start-7 col-start-11 col-end-13 md:col-end-13 text-lg z-10">
-            
-            <button id="nav-btn" class="md:hidden h-8 w-8 mx-auto mt-10 flex justify-between flex-col overflow-hidden rounded-md">
-                <div class="w-full h-1.5 bg-white"></div>
-                <div class="w-full h-1.5 bg-white"></div>
-                <div class="w-full h-1.5 bg-white"></div>
-            </button>
-            
-            <ol id="nav" class="md:flex md:my-6 md:justify-around max-md:mt-3 max-md:h-3/5 max-md:text-base max-md:hidden">
-                <a href="#" class="md:grow-0 md:shrink-0 md:basis-24 md:py-4 max-md:block max-md:mt-2 max-md:h-10 max-md:py-2 rounded-xl hover:bg-yellow-400 hover:text-red-950"><li>Home</li></a>
-                <a href="#" class="md:grow-0 md:shrink-0 md:basis-24 md:py-4 max-md:block max-md:mt-2 max-md:h-10 max-md:py-2 rounded-xl hover:bg-yellow-400 hover:text-red-950"><li>Menu</li></a>
-                <a href="#" class="md:grow-0 md:shrink-0 md:basis-24 md:py-4 max-md:block max-md:mt-2 max-md:h-10 max-md:py-2 rounded-xl hover:bg-yellow-400 hover:text-red-950"><li>Book</li></a>
-                <a href="#" class="md:grow-0 md:shrink-0 md:basis-24 md:py-4 max-md:block max-md:mt-2 max-md:h-10 max-md:py-2 rounded-xl hover:bg-yellow-400 hover:text-red-950"><li>About</li></a>
-            </ol>
-        </nav>
-        
-        <div class="z-0 absolute top-0 right-0 w-screen h-screen bg-black bg-opacity-80"></div>
-        
-        <div class="-z-10 absolute top-0 right-0 w-screen h-screen overflow-hidden">
-            <video class="min-w-full min-h-full object-fill" muted autoplay loop>
-                <source src="videos/background-1280x720-25fps.mp4" type="video/mp4">
-            </video>
+      <article
+        id="heading"
+        class="z-10 col-start-3 col-end-11 row-start-3 row-end-5 grid grid-cols-12 grid-rows-6">
+        <div id="heading" class="z-20 col-span-12 row-start-1 row-end-5">
+          <h1 class="absolute -top-full">Little Lemon</h1>
+          <img
+            class="mx-auto my-5 max-h-full max-w-full"
+            src="logos/Asset 14@4x.png"
+            alt="Little Lemon Heading" />
         </div>
-        
+
+        <p
+          class="z-20 col-span-12 row-start-5 row-end-7 m-auto max-w-md pl-8 text-sm max-md:text-xs">
+          "Delight your taste buds with culinary wonders, at our restaurant
+          where flavors take you on a journey."
+        </p>
+      </article>
+
+      <nav
+        id="navigation"
+        class="z-10 col-start-11 col-end-13 row-span-2 text-lg md:col-start-7 md:col-end-13 md:row-span-1">
+        <button
+          id="hamburger-btn"
+          class="mx-auto mt-9 flex h-8 w-8 flex-col justify-between overflow-hidden rounded-md md:hidden">
+          <div class="h-1.5 w-full bg-yellow-100"></div>
+          <div class="h-1.5 w-full bg-yellow-100"></div>
+          <div class="h-1.5 w-full bg-yellow-100"></div>
+        </button>
+
+        <button
+          id="cross-btn"
+          class="relative mx-auto mt-9 hidden h-8 w-8 overflow-hidden rounded-md border border-solid border-white md:hidden">
+          <div
+            class="absolute top-3.5 h-1 w-full rotate-45 bg-yellow-100"></div>
+          <div
+            class="absolute top-3.5 h-1 w-full -rotate-45 bg-yellow-100"></div>
+        </button>
+
+        <ol
+          id="nav"
+          class="hidden max-md:mt-3 max-md:h-3/5 max-md:text-base md:my-6 md:flex md:justify-around">
+          <a
+            href="#"
+            class="rounded-xl hover:bg-yellow-400 hover:text-red-950 max-md:mt-2 max-md:block max-md:h-10 max-md:py-2 md:shrink-0 md:grow-0 md:basis-24 md:py-4">
+            <li>Home</li>
+          </a>
+          <a
+            href="#"
+            class="rounded-xl hover:bg-yellow-400 hover:text-red-950 max-md:mt-2 max-md:block max-md:h-10 max-md:py-2 md:shrink-0 md:grow-0 md:basis-24 md:py-4"
+            ><li>Menu</li>
+          </a>
+          <a
+            href="#"
+            class="rounded-xl hover:bg-yellow-400 hover:text-red-950 max-md:mt-2 max-md:block max-md:h-10 max-md:py-2 md:shrink-0 md:grow-0 md:basis-24 md:py-4"
+            ><li>Book</li>
+          </a>
+          <a
+            href="#"
+            class="rounded-xl hover:bg-yellow-400 hover:text-red-950 max-md:mt-2 max-md:block max-md:h-10 max-md:py-2 md:shrink-0 md:grow-0 md:basis-24 md:py-4"
+            ><li>About</li>
+          </a>
+        </ol>
+      </nav>
+
+      <div
+        class="absolute right-0 top-0 z-0 h-screen w-full border-x-4 border-b-4 border-solid border-yellow-400 bg-black bg-opacity-80"></div>
+
+      <div
+        class="absolute right-0 top-0 -z-10 h-screen w-screen overflow-hidden">
+        <video class="min-h-full min-w-full object-fill" muted autoplay loop>
+          <source src="videos/background-1280x720-25fps.mp4" type="video/mp4" />
+        </video>
+      </div>
     </header>
 
-    <main id="main" class="">
+    <main id="main" class=""></main>
 
-    </main>
+    <footer id="footer" class=""></footer>
 
-    <footer id="footer" class="">
+    <script>
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const crossBtn = document.querySelector("#cross-btn");
+      const navEl = document.querySelector("#nav");
 
-    </footer>
+      hamburgerBtn.addEventListener("click", toggleBtn);
+      crossBtn.addEventListener("click", toggleBtn);
 
-</body>
+      function toggleBtn() {
+        hamburgerBtn.classList.toggle("hidden");
+        crossBtn.classList.toggle("hidden");
+        navEl.classList.toggle("hidden");
+      }
+    </script>
+  </body>
 </html>
