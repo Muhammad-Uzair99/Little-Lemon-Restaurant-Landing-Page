@@ -8,7 +8,7 @@
   </head>
 
   <body
-    class="container m-0 box-border grid w-full grid-cols-1 grid-rows-4 p-0 text-center font-serif font-semibold text-yellow-100">
+    class="m-0 box-border grid w-full grid-cols-1 grid-rows-4 p-0 text-center font-serif font-semibold text-yellow-100">
     <header
       id="header"
       class="col-span-1 row-span-1 grid h-screen grid-cols-12 grid-rows-6">
@@ -50,7 +50,7 @@
 
         <button
           id="cross-btn"
-          class="relative mx-auto mt-9 hidden h-8 w-8 overflow-hidden rounded-md border border-solid border-white md:hidden"
+          class="relative mx-auto mt-9 hidden h-8 w-8 overflow-hidden rounded-md md:hidden"
           aria-label="Close Menu">
           <div
             class="absolute top-3.5 h-1 w-full rotate-45 bg-yellow-100"></div>
@@ -63,25 +63,25 @@
           class="hidden max-md:mt-3 max-md:h-3/5 max-md:text-base md:my-6 md:flex md:justify-around">
           <a
             href="#header"
-            class="rounded-xl hover:bg-yellow-400 hover:text-red-950 max-md:mt-2 max-md:block max-md:h-10 max-md:py-2 md:shrink-0 md:grow-0 md:basis-24 md:py-4"
+            class="rounded-xl hover:bg-yellow-400 hover:text-red-950 focus:bg-yellow-400 focus:text-red-950 max-md:mt-2 max-md:block max-md:h-10 max-md:py-2 md:shrink-0 md:grow-0 md:basis-24 md:py-4"
             aria-label="Home">
             <li>Home</li>
           </a>
           <a
-            href="#"
-            class="rounded-xl hover:bg-yellow-400 hover:text-red-950 max-md:mt-2 max-md:block max-md:h-10 max-md:py-2 md:shrink-0 md:grow-0 md:basis-24 md:py-4"
+            href="#menu"
+            class="rounded-xl hover:bg-yellow-400 hover:text-red-950 focus:bg-yellow-400 focus:text-red-950 max-md:mt-2 max-md:block max-md:h-10 max-md:py-2 md:shrink-0 md:grow-0 md:basis-24 md:py-4"
             aria-label="Menu">
             <li>Menu</li>
           </a>
           <a
-            href="#"
-            class="rounded-xl hover:bg-yellow-400 hover:text-red-950 max-md:mt-2 max-md:block max-md:h-10 max-md:py-2 md:shrink-0 md:grow-0 md:basis-24 md:py-4"
+            href="#book"
+            class="rounded-xl hover:bg-yellow-400 hover:text-red-950 focus:bg-yellow-400 focus:text-red-950 max-md:mt-2 max-md:block max-md:h-10 max-md:py-2 md:shrink-0 md:grow-0 md:basis-24 md:py-4"
             aria-label="Book">
             <li>Book</li>
           </a>
           <a
-            href="#"
-            class="rounded-xl hover:bg-yellow-400 hover:text-red-950 max-md:mt-2 max-md:block max-md:h-10 max-md:py-2 md:shrink-0 md:grow-0 md:basis-24 md:py-4"
+            href="#about"
+            class="rounded-xl hover:bg-yellow-400 hover:text-red-950 focus:bg-yellow-400 focus:text-red-950 max-md:mt-2 max-md:block max-md:h-10 max-md:py-2 md:shrink-0 md:grow-0 md:basis-24 md:py-4"
             aria-label="About">
             <li>About</li>
           </a>
@@ -89,7 +89,7 @@
       </nav>
 
       <div
-        class="absolute right-0 top-0 z-0 h-screen w-full border-x-4 border-b-4 border-solid border-yellow-400 bg-black bg-opacity-80"></div>
+        class="absolute right-0 top-0 z-0 h-screen w-full border-x-4 border-b-4 border-solid border-black bg-black bg-opacity-80"></div>
 
       <div
         class="absolute right-0 top-0 -z-10 h-screen w-screen overflow-hidden">
@@ -99,10 +99,97 @@
       </div>
     </header>
 
-    <main id="main" class=""></main>
+    <main
+      id="main"
+      class="col-span-1 row-start-2 row-end-5 grid grid-cols-1 grid-rows-3 overflow-hidden text-yellow-400">
+      <article
+        id="menu"
+        class="grid grid-cols-12 grid-rows-6 bg-gradient-to-b from-black via-gray-900 to-gray-700">
+        <h2
+          id="menu-heading"
+          class="col-span-12 row-span-1 m-auto h-20 w-11/12 rounded-full border border-solid border-gray-900 bg-gradient-to-br from-gray-700 via-gray-900 to-gray-950 py-5 text-3xl">
+          Our Menu
+        </h2>
+        <section
+          id="main-menu"
+          class="col-span-3 row-start-2 row-end-7 flex flex-col justify-around md:col-span-2">
+          <button
+            class="hover:shadow-grey-950 hover:border-grey-900 shrink-0 grow-0 basis-16 rounded-r-full bg-gradient-to-br from-yellow-300 via-yellow-500 to-yellow-700 text-red-900 hover:bg-gradient-to-br hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-700 hover:text-red-900 hover:shadow-lg focus:rounded-r-full focus:bg-yellow-500 focus:text-red-900">
+            Starters
+          </button>
+          <button
+            class="hover:shadow-grey-950 hover:border-grey-900 shrink-0 grow-0 basis-16 rounded-r-full hover:bg-gradient-to-br hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-700 hover:text-red-900 hover:shadow-lg focus:rounded-r-full focus:bg-yellow-500 focus:text-red-900">
+            Salads
+          </button>
+          <button
+            class="hover:shadow-grey-950 hover:border-grey-900 shrink-0 grow-0 basis-16 rounded-r-full hover:bg-gradient-to-br hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-700 hover:text-red-900 hover:shadow-lg focus:rounded-r-full focus:bg-yellow-500 focus:text-red-900">
+            Burgers / Sandwiches
+          </button>
+          <button
+            class="hover:shadow-grey-950 hover:border-grey-900 shrink-0 grow-0 basis-16 rounded-r-full hover:bg-gradient-to-br hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-700 hover:text-red-900 hover:shadow-lg focus:rounded-r-full focus:bg-yellow-500 focus:text-red-900">
+            Main Courses
+          </button>
+          <button
+            class="hover:shadow-grey-950 hover:border-geay-900 shrink-0 grow-0 basis-16 rounded-r-full hover:bg-gradient-to-br hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-700 hover:text-red-900 hover:shadow-lg focus:rounded-r-full focus:bg-yellow-500 focus:text-red-900">
+            Seafood
+          </button>
+          <button
+            class="hover:shadow-grey-950 hover:border-geay-900 shrink-0 grow-0 basis-16 rounded-r-full hover:bg-gradient-to-br hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-700 hover:text-red-900 hover:shadow-lg focus:rounded-r-full focus:bg-yellow-500 focus:text-red-900">
+            Sides
+          </button>
+          <button
+            class="hover:shadow-grey-950 hover:border-geay-900 shrink-0 grow-0 basis-16 rounded-r-full hover:bg-gradient-to-br hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-700 hover:text-red-900 hover:shadow-lg focus:rounded-r-full focus:bg-yellow-500 focus:text-red-900">
+            Desserts
+          </button>
+          <button
+            class="hover:shadow-grey-950 hover:border-geay-900 shrink-0 grow-0 basis-16 rounded-r-full hover:bg-gradient-to-br hover:from-yellow-300 hover:via-yellow-500 hover:to-yellow-700 hover:text-red-900 hover:shadow-lg focus:rounded-r-full focus:bg-yellow-500 focus:text-red-900">
+            Beverages
+          </button>
+        </section>
+        <section
+          class="col-start-4 col-end-13 row-start-2 row-end-7 ml-2"></section>
+      </article>
 
-    <footer id="footer" class=""></footer>
+      <article
+        id="book"
+        class="bg-gradient-to-b from-gray-700 via-gray-900 to-black">
+        <h2 id="book-heading">Book Now!</h2>
+      </article>
+
+      <article id="about" class="border-2 border-solid border-black">
+        <h2 id="about-heading">About Us</h2>
+      </article>
+    </main>
+
+    <footer id="footer" class="col-span-1 row-start-5 row-end-6 h-max">
+      ddcdwdcdw
+    </footer>
 
     <script src="scripts/homePage/navBtn.js"></script>
+    <script>
+      const mainBtn = document.querySelectorAll("#main-menu button");
+      let preClickedKey = 0;
+      mainBtn.forEach((element) =>
+        element.addEventListener("click", () => {
+          mainBtn[preClickedKey].classList.remove(
+            "bg-gradient-to-br",
+            "from-yellow-300",
+            "via-yellow-500",
+            "to-yellow-700",
+            "text-red-900"
+          );
+          preClickedKey = Object.keys(mainBtn).find(
+            (key) => mainBtn[key] === element
+          );
+          mainBtn[preClickedKey].classList.add(
+            "bg-gradient-to-br",
+            "from-yellow-300",
+            "via-yellow-500",
+            "to-yellow-700",
+            "text-red-900"
+          );
+        })
+      );
+    </script>
   </body>
 </html>
