@@ -12,6 +12,7 @@
       hamburgerBtn.classList.toggle("hidden");
       crossBtn.classList.toggle("hidden");
       navEl.classList.toggle("hidden");
+      navEl.classList.toggle("flex");
     }
   });
 })();
