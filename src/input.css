@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    header {
+        @apply bg-black py-2 px-4 h-16 flex justify-between;
+    }
+}
+
+@layer utilities {
+    .header__logo {
+        @apply w-32 h-auto my-auto;
+    }
+    .dropdown-svg {
+        @apply w-9 h-9 my-auto;
+    }
+
+    .header__nav {
+        @apply absolute w-full left-0 top-16 text-center bg-black border-t border-slate-800 h-1/5 text-lg font-medium;
+    }
+}
